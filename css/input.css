@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .link-parent{
+        @apply grid grid-rows-[max-content_0fr] overflow-hidden transition-[grid-template-rows] cursor-pointer;
+    }
+
+    [data-toggle]  [data-row]{
+        @apply rotate-90 ;
+    }
+
+    .link-child{
+        @apply overflow-hidden grid;
+    }
+}
